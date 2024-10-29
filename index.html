@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Levy Lab Research Project Materials</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Font Styling */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Main Heading Styling */
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00693e; /* Dartmouth green */
+        }
+
+        /* Name Styling */
+        .name {
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Dartmouth Health Logo */
+        .logo {
+            display: block;
+            max-width: 150px;
+            margin: 20px auto;
+        }
+
+        /* Abstract Section Styling */
+        .abstract {
+            background-color: #e3f2e1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #00693e;
+            border-radius: 5px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        /* Content Container for Flexbox Layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Content Block Styling */
+        .content-block {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid #00693e;
+        }
+
+        .content-block h2 {
+            font-size: 1.8em;
+            color: #004d34; /* Darker green for headers */
+            margin-bottom: 10px;
+        }
+
+        /* Embed and Iframe Styling */
+        .pdf {
+            width: 100%;
+            max-width: 800px;
+            height: 700px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .video {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Download Button Styling */
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #00693e;
+            color: #fff;
+            font-size: 1em;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background-color: #004d34;
+        }
+
+        /* Media Query for Side-by-Side Layout on Larger Screens */
+        @media (min-width: 900px) {
+            .container {
+                flex-direction: row;
+                gap: 30px;
+            }
+            .content-block {
+                flex: 1;
+            }
+            .pdf, .video {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Dartmouth Health Logo -->
+    <img src="dartmouth-logo.png" alt="Dartmouth Health Logo" class="logo">
+
+    <h1>Levy Lab Research Project: Retrieval Augmented Generation for Pathology Reports</h1>
+
+    <!-- Centered and Bolded Name -->
+    <div class="name">Tanya Nair</div>
+
+    <!-- Abstract Section -->
+    <div class="abstract">
+        <p><strong>Summary:</strong> This project creates a tool to help clinicians gain a better understanding of their patients' cancer cases by summarizing key details of relevant cancer cases from a large database of pathology reports. This tool uses an efficient artificial intelligence model to provide relevant insights without requiring extensive computing resources or internet access.</p>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <div class="content-block">
+            <h2>Research Poster</h2>
+            <embed class="pdf" src="rag.pdf" type="application/pdf"></embed>
+            <a class="download-btn" href="rag.pdf" download>Download Here</a>
+        </div>
+        
+        <div class="content-block">
+            <h2>Research Presentation Video</h2>
+            <iframe class="video" src="https://www.youtube.com/embed/8hP_RWS22fQ?si=lusR72s1IvW24n1-" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
